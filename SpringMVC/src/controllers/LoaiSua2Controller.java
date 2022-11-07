@@ -25,6 +25,7 @@ public class LoaiSua2Controller {
 		tl = request.getParameter("txtTenLoai");
 		LoaiSua ls = new LoaiSua(ml, tl);
 		LoaiSuaBL.them(ls);
+		model.addAttribute("tb", "Da them loai sua");
 		return "them-loai-sua";
 	}
 
