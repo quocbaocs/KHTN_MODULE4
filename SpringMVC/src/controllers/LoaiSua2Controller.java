@@ -92,4 +92,17 @@ public class LoaiSua2Controller {
 		model.addAttribute("tb", "Da them loai sua");
 		return "them-loai-sua3";
 	}
+	
+	
+	@RequestMapping(path = "/them-loai-sua4", method = RequestMethod.GET)
+	public String themLoaiSua4() {
+		return "them-loai-sua3";
+	}
+	@RequestMapping(path = "/them-loai-sua4", method = RequestMethod.POST)
+	public String themLoaiSua4(LoaiSua ls, Model model) {
+//		LoaiSua ls = new LoaiSua(ml, tl);
+		LoaiSuaBL.them(ls);
+		model.addAttribute("tb", "Da them loai sua");
+		return "redirect:/";
+	}
 }
