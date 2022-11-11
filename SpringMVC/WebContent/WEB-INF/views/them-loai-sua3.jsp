@@ -8,10 +8,10 @@
 <title>Thêm</title>
 </head>
 <body>
-	<form action="them-loai-sua2" method="post">
+	<form action="them-loai-sua3" method="post">
 		<h1>Thêm loại sữa</h1>
-		<p><label>Mã loại:</label><input type="text" name="txtMaLoai"></p>
-		<p><label>Tên loại:</label><input type="text" name="txtTenLoai"></p>
+		<p><label>Mã loại:</label><input type="text" name="maLoai"></p>
+		<p><label>Tên loại:</label><input type="text" name="tenLoai"></p>
 		<p><input type="submit" name="btnThem" value="Thêm"></p>
 	</form>
 	<c:if test="${not empty tb}">
