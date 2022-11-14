@@ -41,8 +41,10 @@ http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
 		<property name="host" value="smtp.gmail.com" />
 		<property name="port" value="465" />
-		<property name="username" value="quocbaole368@gmail.com" />
-		<property name="password" value="yytcalppkpbjunpi" />
+		<!-- <property name="username" value="quocbaole368@gmail.com" />
+		<property name="password" value="yytcalppkpbjunpi" /> -->
+		<property name="username" value="lolinhchi2025@gmail.com" />
+		<property name="password" value="yfumgkvpmecgywnu" />
 		<property name="javaMailProperties">
 
 			<props>
