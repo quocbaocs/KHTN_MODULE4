@@ -29,13 +29,11 @@ nav {
 article {
 	width: 80%;
 	background-color: lightyellow;
-	
 }
 </style>
 </head>
 <body>
 	<header>
-
 		<tiles:insertAttribute name="dauTrang" />
 	</header>
 	<main>
@@ -47,7 +45,7 @@ article {
 		</article>
 	</main>
 	<footer>
-	<h1>Footer</h1>
+	
 		<tiles:insertAttribute name="cuoiTrang" />
 	</footer>
 </body>
