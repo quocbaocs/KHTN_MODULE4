@@ -2,6 +2,8 @@ package controllers;
 
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -39,9 +41,9 @@ public class AuthorController {
 	}
 
 	@RequestMapping(path = "/edit-author", method = RequestMethod.POST)
-	public String editAuthor(@RequestParam(name = "name", required = false) String name,
-			@RequestParam(name = "id", required = false) Integer id, Model model) {
-		
+	public String editAuthor(HttpServletRequest request, Model model) {
+		Integer id = Integer.parseInt(request.getParameter("id"));
+		String name = request.getParameter("name");
 		AuthorBL.sua(new Author(id, name));
 		model.addAttribute("authors", AuthorBL.docTatCa());
 		return "authors";
