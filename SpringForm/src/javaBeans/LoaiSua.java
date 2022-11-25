@@ -1,6 +1,8 @@
 package javaBeans;
 
-public class LoaiSua {
+import java.io.Serializable;
+
+public class LoaiSua implements Serializable{
 
 	private String maLoai;
 	private String tenLoai;

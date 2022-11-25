@@ -15,7 +15,7 @@
     </definition>
     <definition name="chao" extends="mau01">
     	<put-attribute name="tieuDe" value="Chào"/>
-    	<put-attribute name="noiDung" value="/WEB-INF/views/home.jsp"/>
+    	<put-attribute name="noiDung" value="/WEB-INF/views/products.jsp"/>
     </definition>
     <definition name="loaisua" extends="mau01">
     	<put-attribute name="tieuDe" value="Loại sữa"/>
@@ -32,6 +32,19 @@
     <definition name="edit-author" extends="mau01">
     	<put-attribute name="tieuDe" value="Edit Author"/>
     	<put-attribute name="noiDung" value="/WEB-INF/views/edit-author.jsp"/>
+    </definition>
+    <definition name="loaiSua4" extends="mau01">
+    	<put-attribute name="tieuDe" value="Them loai sua"/>
+    	<put-attribute name="noiDung" value="/WEB-INF/views/them-loai-sua.jsp"/>
+    </definition>
+    <definition name="addCategory" extends="mau01">
+    	<put-attribute name="tieuDe" value="Add category"/>
+    	<put-attribute name="noiDung" value="/WEB-INF/views/add-category.jsp"/>
+    </definition>
+    <definition name="index" extends="mau01">
+    	<put-attribute name="tieuDe" value="Menu Category"/>
+    	<put-attribute name="thucDon" value="/WEB-INF/views/CategoryMenu.jsp"/>
+    	<put-attribute name="noiDung" value="/WEB-INF/views/home.jsp"/>
     </definition>
 </tiles-definitions>
                 
