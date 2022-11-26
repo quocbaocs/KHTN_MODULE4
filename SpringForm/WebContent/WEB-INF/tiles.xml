@@ -43,8 +43,8 @@
     </definition>
     <definition name="index" extends="mau01">
     	<put-attribute name="tieuDe" value="Menu Category"/>
-    	<put-attribute name="thucDon" value="/WEB-INF/views/CategoryMenu.jsp"/>
-    	<put-attribute name="noiDung" value="/WEB-INF/views/home.jsp"/>
+    	<put-attribute name="thucDon" value="/WEB-INF/views/category-menu.jsp"/>
+    	<put-attribute name="noiDung" value="/WEB-INF/views/products.jsp"/>
     </definition>
 </tiles-definitions>
                 

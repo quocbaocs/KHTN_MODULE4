@@ -16,6 +16,7 @@ public class CategoryController {
 	public String addCategory(Model model) {
 		model.addAttribute("category", new Category());
 		model.addAttribute("parents", CategoryBL.getParrents());
+		
 		return "addCategory";
 	}
 
@@ -23,6 +24,8 @@ public class CategoryController {
 	public String addCategory(@ModelAttribute Category category, Model model) {
 		CategoryBL.them(category);
 		model.addAttribute("parents", CategoryBL.getParrents());
+		
+		
 		return "addCategory";
 	}
 	
@@ -33,8 +36,8 @@ public class CategoryController {
 	@RequestMapping(path = "/index", method = RequestMethod.GET)
 	public String index(Model model) {
 		model.addAttribute("children", CategoryBL.getChildren());
-		
 		model.addAttribute("parents", CategoryBL.getParrents());
+		
 		return "index";
 	}
 }
