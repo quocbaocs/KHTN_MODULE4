@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+    <!-- Default Main Template -->
+    <definition name="mau01" template="/WEB-INF/templates/page-template.jsp">
+        <put-attribute name="tieuDe" value="Spring MVC" type="string" />
+        <put-attribute name="dauTrang" value="/WEB-INF/templates/dau-trang.jsp" />
+        <put-attribute name="cuoiTrang" value="/WEB-INF/templates/cuoi-trang.jsp" />
+        <put-attribute name="thucDon" value="/WEB-INF/templates/thuc-don.jsp" />
+        <put-attribute name="noiDung" value="" />
+    </definition>
+    <definition name="home" extends="mau01">
+    	<put-attribute name="tieuDe" value="Trang chu"/>
+    	<put-attribute name="dauTrang"  value="Mini Shop"/>
+    	<put-attribute name="noiDung" value="/WEB-INF/views/products.jsp"/>
+    	<put-attribute name="thucDon" value="/WEB-INF/views/category-menu.jsp"/>
+    	
+    </definition>
+   <definition name="authors" extends="mau01">
+    	<put-attribute name="tieuDe" value="Authors"/>
+    	<put-attribute name="noiDung" value="/WEB-INF/views/authors.jsp"/>
+    	
+    </definition>
+    <definition name="add-author" extends="mau01">
+    	<put-attribute name="tieuDe" value="Add New Author"/>
+    	<put-attribute name="noiDung" value="/WEB-INF/views/add-author.jsp"/>
+    </definition>
+    <definition name="edit-author" extends="mau01">
+    	<put-attribute name="tieuDe" value="Edit Author"/>
+    	<put-attribute name="noiDung" value="/WEB-INF/views/edit-author.jsp"/>
+    </definition>
+    
+    <definition name="addCategory" extends="mau01">
+    	<put-attribute name="tieuDe" value="Add category"/>
+    	<put-attribute name="noiDung" value="/WEB-INF/views/add-category.jsp"/>
+    </definition>
+     <definition name="detail" extends="mau01">
+    	
+    	<put-attribute name="noiDung" value="/WEB-INF/views/detail.jsp"/>
+    	<put-attribute name="thucDon" value="/WEB-INF/views/category-menu.jsp"/>
+    </definition>
+    <definition name="shopingcart" extends="mau01">
+    	
+    	<put-attribute name="noiDung" value="/WEB-INF/views/trang-cart.jsp"/>
+    	<put-attribute name="thucDon" value="/WEB-INF/views/category-menu.jsp"/>
+    </definition>
+</tiles-definitions>
+                
+            
