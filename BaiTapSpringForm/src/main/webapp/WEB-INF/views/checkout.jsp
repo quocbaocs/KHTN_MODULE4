@@ -4,7 +4,8 @@
 <%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <div>
 	<h1 style="font-size: 50px">${title}</h1>
-	<table style="width: 100%; border-collapse: collapse;" border="1">
+	<table
+		style="width: 100%; border-collapse: collapse;" border="1">
 		<tr>
 			<th>Title</th>
 			<th>Quantity</th>
@@ -24,7 +25,6 @@
 						src="<c:url value="/img/trash.png"/>"></a></td>
 			</tr>
 		</c:forEach>
-		
+
 	</table>
-	<button>Checkout</button>
 </div>
