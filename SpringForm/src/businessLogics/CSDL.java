@@ -12,7 +12,7 @@ public class CSDL {
 
 	public static Connection getKetNoi() {
 		try {
-			Class.forName("com.mysql.cj.jdbc.Driver");
+			Class.forName("com.mysql.jdbc.Driver");
 			ketNoi = DriverManager.getConnection(url, user, password);
 
 		} catch (Exception e) {

@@ -33,35 +33,26 @@ public class CartRepository {
 	}
 
 	public void del(Cart obj) {
-		System.out.println(obj.getId());
-		System.out.println(obj.getProductId());
 		JdbcTemplate jdbc = new JdbcTemplate(ds);
-		jdbc.update("CALL DeleteCart(?,?)", obj.getId(), obj.getProductId());
+		jdbc.update("CALL DeleteCart(?, ?)", obj.getId(), obj.getProductId());
 	}
 
 	public static void main(String[] args) {
 		CartRepository shop = new CartRepository();
-//		String id = IdGenerator.RandGeneratedStr(10);
+		String id = IdGenerator.RandGeneratedStr(10);
 		Cart obj = new Cart();
-		obj.setId("Rlrcok2wW1d7qfPDNWDOPNTNkwjTEUVH");
-		obj.setProductId(3);
-//		obj.setMemberId(Long.parseLong("524261494281601881"));
-//		obj.setProductId(11);
-//		obj.setQuantity(Short.parseShort("1"));
+		obj.setId(id);
+		obj.setMemberId(Long.parseLong("524261494281601881"));
+		obj.setProductId(11);
+		obj.setQuantity(Short.parseShort("1"));
 
-		shop.del(obj);
+		shop.add(obj);
 
-		
-		List<Cart> list = null;
-		try {
-			list = shop.getCarts("Rlrcok2wW1d7qfPDNWDOPNTNkwjTEUVH");
-		} catch (Exception e) {
-			
-			e.printStackTrace();
-		}
-		for (Cart c : list) {
-			System.out.println(c.getProductId());
-		}
+//		CartRepository repository = new CartRepository();
+//		List<Cart> list = CartRepository.getCarts("af8i2wvoqY1PZwBuKucvQFZuiVhx4A3D");
+//		for (Cart c : list) {
+//			System.out.println(c.getProductId());
+//		}
 
 	}
 

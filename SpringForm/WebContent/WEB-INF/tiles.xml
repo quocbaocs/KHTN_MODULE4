@@ -13,12 +13,12 @@
         <put-attribute name="thucDon" value="/WEB-INF/templates/thuc-don.jsp" />
         <put-attribute name="noiDung" value="" />
     </definition>
-    <definition name="chao" extends="mau01">
+    <definition name="home" extends="mau01">
     	<put-attribute name="tieuDe" value="Chào"/>
-    	<put-attribute name="thucDon" value="/WEB-INF/views/category-menu.jsp"/>
-    	<put-attribute name="noiDung" value="/WEB-INF/views/products.jsp"/>
+    	 <put-attribute name="thucDon" value="/WEB-INF/templates/thuc-don.jsp" />
+    	<put-attribute name="noiDung" value="/WEB-INF/views/home.jsp"/>
     </definition>
-    <definition name="loaisua" extends="mau01">
+    <definition name="loai-sua" extends="mau01">
     	<put-attribute name="tieuDe" value="Loại sữa"/>
     	<put-attribute name="noiDung" value="/WEB-INF/views/loai-sua.jsp"/>
     </definition>
@@ -44,8 +44,14 @@
     </definition>
     <definition name="index" extends="mau01">
     	<put-attribute name="tieuDe" value="Menu Category"/>
+    	 <put-attribute name="dauTrang" value="/WEB-INF/views/dau-trang-minishop.jsp" />
     	<put-attribute name="thucDon" value="/WEB-INF/views/category-menu.jsp"/>
-    	<put-attribute name="noiDung" value="/WEB-INF/views/home.jsp"/>
+    	<put-attribute name="noiDung" value="/WEB-INF/views/products.jsp"/>
+    </definition>
+     <definition name="login" extends="mau01">
+    	<put-attribute name="tieuDe" value="Login"/>
+    	
+    	<put-attribute name="noiDung" value="/WEB-INF/views/login.jsp"/>
     </definition>
 </tiles-definitions>
                 

@@ -31,4 +31,19 @@ http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 			</list>
 		</property>
 	</bean>
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/home"/>
+			<bean class="interceptors.Vd1Interceptors"/>
+		</mvc:interceptor>
+		<!-- <mvc:interceptor>
+			<mvc:mapping path="/loai-sua"/>
+			<bean class="interceptors.LoaiSuaInterceptor"/>
+		</mvc:interceptor> -->
+		
+		<mvc:interceptor>
+			<mvc:mapping path="/add-category"/>
+			<bean class="interceptors.AddCategoryInterceptor"/>
+		</mvc:interceptor>
+	</mvc:interceptors>
 </beans>

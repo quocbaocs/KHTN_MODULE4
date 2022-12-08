@@ -10,7 +10,7 @@ public class CSDL2 {
 		dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
 		dataSource.setUrl("jdbc:mysql://localhost:3306/minishop?useUnicode=true&characterEncoding=utf-8");
 		dataSource.setUsername("root");
-		dataSource.setPassword("quocbao@123");
+		dataSource.setPassword("");
 
 		return dataSource;
 	}

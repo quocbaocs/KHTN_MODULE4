@@ -17,3 +17,12 @@
 
 ##
 	- Apache tiles là Frameword dùng tạo template.
+	
+	- Thủ tục không trả về giá trị (chạy nhanh hơn,chạy thẳng trên database server trả về dữ liệu)
+	
+	function trả về giá trị
+## String REST
+	- Dịch vụ web có 2 loại : 
+				+SOAP giao thức truy cập đối tượng đơn giản message XML
+				+RESTful -> dùng trên web
+									

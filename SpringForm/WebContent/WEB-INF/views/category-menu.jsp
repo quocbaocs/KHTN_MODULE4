@@ -9,7 +9,7 @@
 	<ul style="list-style: none;">
 		<c:forEach items="${children}" var="c">
 			<c:if test="${p.categoryId==c.parentId}">
-				<li><a href="#">${c.categoryName}</a></li>
+				<li><a href="${pageContext.request.contextPath}/index/category/${c.categoryId}">${c.categoryName}</a></li>
 			</c:if>
 		</c:forEach>
 	</ul>
